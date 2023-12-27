@@ -37,7 +37,6 @@ def db_connection():
     connection.close()
 
 
-@pytest.mark.usefixtures("db_connection")
 class TestGryffindor:
 
     def test_find_by_year(self, db_connection):
@@ -89,4 +88,3 @@ class TestGryffindor:
         cursor.execute(f"select * from Gryffindor where blood_status in ('Half-blood','Half-breed')")
         results = cursor.fetchall()
         assert results == [("Harry", "Potter", "Half-blood", 1980), ("Rubeus", "Hagrid", "Half-breed", 1928)]
-
