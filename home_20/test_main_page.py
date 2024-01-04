@@ -29,8 +29,10 @@ class TestMainPage:
                               ("https://www.google.com/", "Google")])
     def test_main_page(self, main_page, expected_title, driver):
         driver.get(main_page)
+        driver.save_screenshot(f"{expected_title}.png")
         current_url = driver.current_url
         assert current_url in ["https://www.amazon.com/",
                                "https://www.apple.com/",
                                "https://www.google.com/"]
         assert expected_title in driver.title
+
