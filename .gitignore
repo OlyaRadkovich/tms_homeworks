@@ -2,3 +2,5 @@
 home_21/__pycache__/
 home_22/__pycache__/
 
+/test_homework_24/.pytest_cache/
+/test_homework_24/tests/.pytest_cache/
