@@ -6,7 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
 
-class BaseAction:
+class BaseElement:
     def __init__(self, driver, xpath):
         self.driver = driver
         self.xpath = xpath

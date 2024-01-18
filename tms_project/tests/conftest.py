@@ -1,8 +1,8 @@
 import pytest
 from selenium import webdriver
 
-from src.constants import Host
-from src.main_page import MainPage
+from tms_project.src.constants import Host
+from tms_project.src.main_page import MainPage
 
 
 @pytest.fixture

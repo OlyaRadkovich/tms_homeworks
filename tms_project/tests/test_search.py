@@ -1,9 +1,8 @@
 from selenium.common import NoSuchElementException
 
-from src.common_page import CommonPage
-from src.main_page import MainPage
-from src.movie_page import MoviePage
-from tests.conftest import driver
+from tms_project.src.common_page import CommonPage
+from tms_project.src.main_page import MainPage
+from tms_project.src.movie_page import MoviePage
 
 
 def search_and_check(driver, word, element):
