@@ -1,5 +1,5 @@
-from tms_project.src.base_action import BaseElement
-from tms_project.src.base_page import BasePage
+from src.base_action import BaseElement
+from src.base_page import BasePage
 
 
 class CommonPage(BasePage, BaseElement):
